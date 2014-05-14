@@ -11,7 +11,6 @@ export PATH=$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go
 sudo mkdir /usr/local/go/packages
 export GOPATH=/usr/local/go/packages
-sudo echo "export PATH=\$PATH:/usr/local/go/bin" >> /etc/profile.d/envvar.sh;
-sudo echo "export GOROOT=/usr/local/go" >> /etc/profile.d/envvar.sh;
-sudo echo "export GOPATH=/usr/local/go/packages" >> /etc/profile.d/envvar.sh;
-sudo chmod +x /etc/profile.d/envvar.sh;
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bash_profile;
+echo "export GOROOT=/usr/local/go" >> ~/.bash_profile;
+echo "export GOPATH=/usr/local/go/packages" >> ~/.bash_profile;
